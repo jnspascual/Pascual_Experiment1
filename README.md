@@ -1,3 +1,8 @@
+EXPERIMENT 1: INTRODUCTION TO PYTHON PROGRAMMING
+Jasmine Nicole S. Pascual
+2ECE-B
+August 26, 2024
+
 # Pascual_Experiment1
 
 ALPHABET SOUP PROBLEM
