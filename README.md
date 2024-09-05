@@ -6,7 +6,9 @@ August 26, 2024
 # Pascual_Experiment1
 
 ALPHABET SOUP PROBLEM
+
 a = input("Please enter your letters: ")  #Prompt the user to enter letters
+
 b = ''.join(sorted(a)) #Sort the entered letters and joins them 
 print(b) #Print the output
 
