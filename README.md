@@ -1,21 +1,31 @@
-EXPERIMENT 1: INTRODUCTION TO PYTHON PROGRAMMING
+**EXPERIMENT 1: INTRODUCTION TO PYTHON PROGRAMMING**
+
 Jasmine Nicole S. Pascual
+
 2ECE-B
+
 August 26, 2024
+##
+**I. Intended Learning Outcomes:**
+1. To identify the basic codes and functions in Python Programming
+2. To be able to apply the different codes and functions in creating a Python Program
+##
+**II. Instructions:**
+Write a Python script/code in the Jupyter Notebook to do the given problems. You may submit your Jupyter notebook in the dedicated submission bin.
 
-# Pascual_Experiment1
+**ALPHABET SOUP PROBLEM**
+Create a function that takes a string and returns a string with its letters in alphabetical order.
 
-ALPHABET SOUP PROBLEM
+a = input("Please enter your letters: ")  _#Prompt the user to enter letters_
 
-a = input("Please enter your letters: ")  #Prompt the user to enter letters
+b = ''.join(sorted(a)) _#Sort the entered letters and joins them_ 
 
-b = ''.join(sorted(a)) #Sort the entered letters and joins them 
+print(b) _#Print the output_
 
-print(b) #Print the output
+**EMOTICON PROBLEM**
+Create a function that changes specific words into emoticons. Given a sentence as a string, replace the words, smile, grin, sad and mad with their corresponding emoticons.
 
-EMOTICON PROBLEM
-
-def emote(sentence): #Define the dictionary of emoticons where keys are words and values are their corresponding emoticons
+def emote(sentence): _#Define the dictionary of emoticons where keys are words and values are their corresponding emoticons_
 
     emoticons = {
         "smile":":)",
@@ -23,36 +33,37 @@ def emote(sentence): #Define the dictionary of emoticons where keys are words an
         "sad":":((",
         "mad":">:("
     }
-    words = sentence.split() #Split the sentence into words
+    words = sentence.split() _#Split the sentence into words_
     
-    replace = [emoticons.get(word, word) for word in words] #Replace the words with their corresponding emoticons in the dictionary
+    replace = [emoticons.get(word, word) for word in words] _#Replace the words with their corresponding emoticons in the dictionary_
     
-    return ' '.join(replace) #Join the words back into a single sentence with the emoticons
+    return ' '.join(replace) _#Join the words back into a single sentence with the emoticons_
 
-print(emote("Make me smile")) #Print "Make me smile" replacing smile with the emoticon ":)"
+print(emote("Make me smile")) _#Print "Make me smile" replacing smile with the emoticon ":)"_
 
-print(emote("I am mad")) #Print "I am mad" replacing mad with the emoticon ">:("
+print(emote("I am mad")) _#Print "I am mad" replacing mad with the emoticon ">:("_
 
-UNPACKING LIST PROBLEM
+**UNPACKING LIST PROBLEM**
+Unpack the list writeyourcodehere into three variables, being first, middle, and last, with the middle being everything in between the first and last element. Then print all three variables.
 
-items = input("Please enter your list of items.") #Prompt the user to enter their list of items
+items = input("Please enter your list of items.") _#Prompt the user to enter their list of items_
 
-items = items.replace(',', ' ') #Remove the commas in the list and replace it with spaces
+items = items.replace(',', ' ') _#Remove the commas in the list and replace it with spaces_
 
-list = items.split() #Split list into separate items
+list = items.split() _#Split list into separate items_
 
 def unpack(list):
 
-    if len(list) == 0: #Check if the list it empty then prompt the user to enter their list again
+    if len(list) == 0: _#Check if the list it empty then prompt the user to enter their list again_
         print("The list is empty. Please try again.")
         
     else: 
-        first, *middle, last = list #Unpack the list into their first, middle and last items
+        first, *middle, last = list _#Unpack the list into their first, middle and last items_
         
-        print("first: ", first) #Print the first item
+        print("first: ", first) _#Print the first item_
         
-        print("middle: ", ' '.join(middle)) #Print the middle items joined into a string separated by spaces
+        print("middle: ", ' '.join(middle)) _#Print the middle items joined into a string separated by spaces_
         
-        print("last:" , last) #Print the last item
+        print("last:" , last) _#Print the last item_
 
-unpack(list) #Call the unpack function with the new list
+unpack(list) _#Call the unpack function with the new list_
