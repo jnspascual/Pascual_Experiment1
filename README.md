@@ -16,16 +16,16 @@ Write a Python script/code in the Jupyter Notebook to do the given problems. You
 **ALPHABET SOUP PROBLEM**
 Create a function that takes a string and returns a string with its letters in alphabetical order.
 
-            a = input("Please enter your letters: ")  _#Prompt the user to enter letters_
+            a = input("Please enter your letters: ")  #Prompt the user to enter letters
             
-            b = ''.join(sorted(a)) _#Sort the entered letters and joins them_ 
+            b = ''.join(sorted(a)) #Sort the entered letters and joins them
             
-            print(b) _#Print the output_
+            print(b) #Print the output
 
 **EMOTICON PROBLEM**
 Create a function that changes specific words into emoticons. Given a sentence as a string, replace the words, smile, grin, sad and mad with their corresponding emoticons.
 
-            def emote(sentence): _#Define the dictionary of emoticons where keys are words and values are their corresponding emoticons_
+            def emote(sentence): #Define the dictionary of emoticons where keys are words and values are their corresponding emoticons
             
                 emoticons = {
                     "smile":":)",
@@ -33,37 +33,37 @@ Create a function that changes specific words into emoticons. Given a sentence a
                     "sad":":((",
                     "mad":">:("
                 }
-                words = sentence.split() _#Split the sentence into words_
+                words = sentence.split() #Split the sentence into words
                 
-                replace = [emoticons.get(word, word) for word in words] _#Replace the words with their corresponding emoticons in the dictionary_
+                replace = [emoticons.get(word, word) for word in words] #Replace the words with their corresponding emoticons in the dictionary
                 
-                return ' '.join(replace) _#Join the words back into a single sentence with the emoticons_
+                return ' '.join(replace) #Join the words back into a single sentence with the emoticons
             
-            print(emote("Make me smile")) _#Print "Make me smile" replacing smile with the emoticon ":)"_
+            print(emote("Make me smile")) #Print "Make me smile" replacing smile with the emoticon ":)"
             
-            print(emote("I am mad")) _#Print "I am mad" replacing mad with the emoticon ">:("_
+            print(emote("I am mad")) #Print "I am mad" replacing mad with the emoticon ">:("
 
 **UNPACKING LIST PROBLEM**
 Unpack the list writeyourcodehere into three variables, being first, middle, and last, with the middle being everything in between the first and last element. Then print all three variables.
 
-            items = input("Please enter your list of items.") _#Prompt the user to enter their list of items_
+            items = input("Please enter your list of items.") #Prompt the user to enter their list of items
             
-            items = items.replace(',', ' ') _#Remove the commas in the list and replace it with spaces_
+            items = items.replace(',', ' ') #Remove the commas in the list and replace it with spaces
             
-            list = items.split() _#Split list into separate items_
+            list = items.split() #Split list into separate items
             
             def unpack(list):
             
-                if len(list) == 0: _#Check if the list it empty then prompt the user to enter their list again_
+                if len(list) == 0: #Check if the list it empty then prompt the user to enter their list again
                     print("The list is empty. Please try again.")
                     
                 else: 
-                    first, *middle, last = list _#Unpack the list into their first, middle and last items_
+                    first, *middle, last = list #Unpack the list into their first, middle and last items
                     
-                    print("first: ", first) _#Print the first item_
+                    print("first: ", first) #Print the first item
                     
-                    print("middle: ", ' '.join(middle)) _#Print the middle items joined into a string separated by spaces_
+                    print("middle: ", ' '.join(middle)) #Print the middle items joined into a string separated by spaces
                     
-                    print("last:" , last) _#Print the last item_
+                    print("last:" , last) #Print the last item
             
-            unpack(list) _#Call the unpack function with the new list_
+            unpack(list) #Call the unpack function with the new list
